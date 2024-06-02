@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Freeman&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Fim Google Fonts -->
+    <!-- BootStrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Fim BootStrap Icons -->
+    <title>PortiFólio</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script src="menu.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="Images/gilver-e.png" alt="Logo Gilver">
+            </div> <!--Logotipo-->
+
+            <nav class="menu_desktop">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre_mim.html">Sobre Mim</a></li>
+                    <li><a href="formacao.html">Formação</a></li>
+                    <li><a href="experiencia.html">Experiência</a></li>
+                    <li><a href="portifolio.html">Portifólio</a></li>
+
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="contato.html">
+                    <button>Contato</button>
+                </a>
+            </div><!--btn-contato-->
+
+            <div class="btn-abrir-menu" id="btn-menu">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile"> <!--menu-mobile-->
+                <div class="btn-fechar">
+                    <i class="bi bi-x-circle"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="sobre_mim.html">Sobre Mim</a></li>
+                        <li><a href="formacao.html">Formação</a></li>
+                        <li><a href="experiencia.html">Experiência</a></li>
+                        <li><a href="portifolio.html">Portifólio</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </nav>
+
+            </div> <!--menu-mobile-->
+            <div class="overlay-menu" id="overlay-menu"></div>
+        </div><!--interface termina-->
+    </header>
+
+
+    <main>
+        <section class="topo-do-site">
+            <div class="interface">
+                <div class="flex">
+                    <div class="txt-topo-site">
+                        <h1>Portifólio<span>:</span></h1>
+                    </div> <!--txt-topo-site-->
+                </div><!--flex-->
+            </div> <!--interface-->
+        </section> <!--Topo do Site-->
+
+        <section class="portifolio">
+            <div class="interface">
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(Baners_Projetos/Aluguel_veiculos.png);">
+                        <div class="overlay">
+                            <h4 class="h4">Aluguel de Veículos</h4>
+                            <button onclick="abrirModal()" class="btn-saibamais">Saiba mais</button>
+                        </div>
+
+                    </div>
+                    <div class="img-port" style="background-image: url(Baners_Projetos/Calculadora_hp.png);">
+                        <div class="overlay">
+                            <h4 class="h4">Calculadora HP</h4>
+                            <button onclick="abrirModal1()" class="btn-saibamais">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="img-port" style="background-image: url(Baners_Projetos/Gerenciador_tarefas.png);">
+                        <div class="overlay">
+                            <h4 class="h4">Gestor de Tarefas</h4>
+                            <button onclick="abrirModal2()" class="btn-saibamais">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="img-port" style="background-image: url(Baners_Projetos/Loja_virtual.png);">
+                        <div class="overlay">
+                            <h4 class="h4">Loja Virtual</h4>
+                            <button onclick="abrirModal3()" class="btn-saibamais">Saiba mais</button>
+                        </div>
+                    </div>
+                    <div class="img-port" style="background-image: url(Baners_Projetos/Plataforma_ensino.png);">
+                        <div class="overlay">
+                            <h4 class="h4">Plataforma de Ensino</h4>
+                            <button onclick="abrirModal4()" class="btn-saibamais">Saiba mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div> <!--interface-->
+        </section> <!--portifolio-->
+
+    </main>
+
+    <footer> <!--Rodapé-->
+        <div class="rodape">
+            <div class="line-footer">
+
+                <div class="btn-social">
+                    <a href="https://www.instagram.com/gilverbrum/" target="_blank"><button><i
+                                class="bi bi-instagram"></i></button></a>
+                    <a href="https://github.com/GilverBrum" target="_blank"><button><i
+                                class="bi bi-github"></i></button></a>
+                    <a href="https://www.linkedin.com/in/gilverbrum/" target="_blank"><button><i
+                                class="bi bi-linkedin"></i></button></a>
+                    <a href="https://api.whatsapp.com/send?phone=5532988601568" target="_blank"><button><i
+                                class="bi bi-whatsapp"></i></button></a>
+                    <a href="mailto:gilverbrum@yahoo.com.br"><button><i class="bi bi-envelope-at-fill"></i></button></a>
+
+                </div>
+            </div><!--line-footer-->
+        </div>
+    </footer>
+
+    <!-- Começa Os popup -->
+    <div class="janela-modal" id="janela-modal">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Funcionalidade:</h1>
+            <p>Um site de aluguel de veículos facilita a locação de automóveis, permitindo que os usuários pesquisem,
+                comparem e reservem veículos online. Oferece informações detalhadas sobre os veículos, preços, e
+                políticas de aluguel, além de funcionalidades como filtros de pesquisa, comparações, e gerenciamento de
+                reservas. A plataforma inclui suporte ao cliente via chat ao vivo e FAQs, além de promoções e programas
+                de fidelidade. O objetivo principal é proporcionar uma experiência de aluguel conveniente, eficiente e
+                informada.</p>
+            <br>
+            <h1>Ferramentas de Programação:</h1>
+            <p>Para desenvolver um site de aluguel de veículos, HTML, CSS, Python e JavaScript são essenciais. HTML
+                estrutura o conteúdo, garantindo uma base sólida e compreensível. CSS estiliza o site, criando layouts
+                atraentes e responsivos, embora possa ser complexo em projetos maiores. JavaScript adiciona
+                interatividade e dinamismo, essencial para funções como buscas e reservas, mas pode ser difícil de
+                depurar. Python, através de frameworks como Django, gerencia o backend, oferecendo uma sintaxe clara e
+                desenvolvimento rápido, porém pode ser mais lento e consumir mais memória. A combinação dessas
+                linguagens proporciona um site funcional, atrativo e eficiente.</p>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="janela-modal1">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Funcionalidade:</h1>
+            <p>Uma calculadora virtual HP financeira simula as funcionalidades de uma calculadora financeira HP física,
+                permitindo cálculos complexos como análise de fluxos de caixa, juros compostos e amortização de
+                empréstimos. Usando uma interface virtual com teclas e display, ela facilita a entrada de dados e
+                execução de funções financeiras. As vantagens incluem acessibilidade e funcionalidade completa, enquanto
+                as desvantagens são a dependência de dispositivos eletrônicos e possíveis questões ergonômicas. É uma
+                ferramenta poderosa e prática para profissionais e estudantes de finanças.</p>
+            <br>
+            <h1>Ferramentas de Programação:</h1>
+            <p>As linguagem de programação utilizadas no desenvolvimento de uma calculadora virtual HP Financeira são:
+                Python, JavaScript e C++.
+                As vantagens em geral, são que essas linguagens são amplamente conhecidas e possuem uma grande
+                biblioteca especializadas , além de serem amplamente conhecidas.
+                Entretanto, as desvantagens serima que, pelo fato dessas linguagens não serem específicas para esse tipo
+                de aplicação, o programa pode ficar restrito a certas mudanças e atualizações, assim dificultando sua
+                manutenção e correção de possíveis bugs.</p>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="janela-modal2">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Funcionalidade:</h1>
+            <p> O aplicativo funciona como uma plataforma de gerenciamento de projetos baseada em quadros, onde os
+                usuários organizam tarefas em listas e cartões. Permite a colaboração entre membros da equipe, com
+                atribuição de tarefas e comentários. Os cartões contêm informações detalhadas, como descrições e datas
+                de vencimento. A interface intuitiva facilita o arrastar e soltar de cartões entre listas para refletir
+                o progresso das atividades. Além disso, oferece integrações com diversas ferramentas para ampliar suas
+                funcionalidades. Sua finalidade é proporcionar uma maneira eficaz de organizar, colaborar e acompanhar o
+                progresso de projetos e tarefas</p>
+            <br>
+            <h1>Ferramentas de Programação:</h1>
+            <p>As principais linguagens utilizadas no desenvolvimento de uma aplicação como o essa são HTML, CSS,
+                JavaScript, Python, Node.js (com Express.js) e Ruby (com Ruby on Rails). HTML, CSS e JavaScript são
+                essenciais para o front-end, oferecendo estrutura, estilo e interatividade. Python é comumente usado no
+                back-end, especialmente com frameworks como Django ou Flask, devido à sua sintaxe limpa e legível.
+                Node.js, em conjunto com Express.js, permite a construção de servidores web eficientes e escaláveis, com
+                JavaScript tanto no front-end quanto no back-end. Ruby, com Ruby on Rails, oferece desenvolvimento
+                rápido e conveniente, embora possa ser menos flexível para projetos altamente personalizados. Cada
+                linguagem tem suas vantagens e desvantagens, e a escolha depende das necessidades e preferências
+                específicas do projeto e da equipe de desenvolvimento.</p>
+        </div>
+    </div>
+
+    <div class="janela-modal" id="janela-modal3">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Funcionalidade:</h1>
+            <p>Uma loja online de venda de refeições oferece conveniência aos clientes, permitindo a compra de alimentos
+                prontos sem sair de casa. Com um catálogo variado, os clientes selecionam e personalizam suas refeições,
+                adicionando-as ao carrinho de compras virtual. O pagamento é feito online de forma segura, e a equipe da
+                loja inicia o preparo das refeições assim que o pedido é confirmado. Após o preparo e embalagem, as
+                refeições são entregues no endereço indicado ou podem ser retiradas na loja. Os clientes têm a
+                oportunidade de avaliar a experiência e fornecer feedback, contribuindo para melhorias contínuas no
+                serviço. Em resumo, a loja online simplifica o processo de compra de refeições, oferecendo conveniência,
+                variedade e qualidade aos clientes.</p>
+            <br>
+            <h1>Ferramentas de Programação:</h1>
+            <p> Python, com frameworks como Django ou Flask, oferece uma sintaxe limpa e legível, facilitando o
+                desenvolvimento rápido de uma loja online. Sua vasta coleção de bibliotecas e frameworks disponíveis
+                contribui para uma boa performance e escalabilidade. No entanto, pode ser menos adequado para aplicações
+                que exigem muita computação em tempo real.</p><br>
+
+            <p> Por outro lado, JavaScript, especialmente com Node.js e Express.js, permite o desenvolvimento tanto do
+                front-end quanto do back-end da aplicação. Sua alta performance com uso de I/O não bloqueante e grande
+                quantidade de pacotes disponíveis no npm são vantagens significativas. Entretanto, a curva de
+                aprendizado íngreme para iniciantes e a menor adequação para aplicações que demandam computação
+                intensiva podem ser desafios a serem considerados.</p>
+
+        </div>
+    </div>
+
+    <div class="janela-modal" id="janela-modal4">
+        <div class="modal">
+            <button class="fecharmodal" id="fecharmodal">X</button>
+            <h1>Funcinalidade:</h1>
+            <p>Uma plataforma virtual de ensino proporciona aprendizagem e ensino em um ambiente digital acessível pela
+                internet. Oferece conteúdos educacionais diversos e promove interação entre alunos e professores por
+                meio de fóruns e videoconferências. Os professores monitoram o progresso dos alunos, atribuem tarefas e
+                fornecem feedback. Sua flexibilidade permite aprendizado individualizado e acesso a recursos inovadores,
+                impulsionando a colaboração e a inovação educacional. Em síntese, é uma ferramenta poderosa que
+                transforma o processo de ensino, promovendo aprendizagem personalizada e colaborativa em um ambiente
+                digital dinâmico.</p>
+            <br>
+            <h1>Ferramentas de Programação:</h1>
+            <p>HTML, CSS e JavaScript são linguagens fundamentais para o desenvolvimento de plataformas virtuais de
+                ensino. HTML é usado para estruturar e organizar o conteúdo da página, enquanto CSS é responsável por
+                estilizar o layout e a aparência visual. JavaScript adiciona interatividade à aplicação, permitindo a
+                criação de elementos dinâmicos e reações a eventos do usuário. Suas vantagens incluem facilidade de
+                aprendizado, ampla compatibilidade e flexibilidade na criação de interfaces atrativas e funcionais. No
+                entanto, a dependência de bibliotecas adicionais para funcionalidades avançadas e questões de
+                compatibilidade entre navegadores podem surgir como desafios. Em resumo, essas linguagens são essenciais
+                para criar uma experiência de aprendizado envolvente e intuitiva em plataformas de ensino online.</p>
+        </div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
